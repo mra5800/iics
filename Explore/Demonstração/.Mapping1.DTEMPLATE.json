@@ -16,7 +16,7 @@
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "",
+        "description" : "Mapa criado para realizar Parser de estruturas.",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
@@ -35,10 +35,7 @@
       "repoInfo" : {
         "repoHandle" : "0101E630000000000005"
       },
-      "contextAttributes" : [ {
-        "name" : "id",
-        "value" : "@1"
-      } ],
+      "contextAttributes" : null,
       "additionalInfo" : {
         "description" : "",
         "contentType" : "JSON",
