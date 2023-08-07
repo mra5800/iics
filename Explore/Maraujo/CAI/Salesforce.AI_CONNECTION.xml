@@ -1,0 +1,60 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>NpeBt0i98C1LOwD-gt-72496548-2023-02-01T21:47:21.634Z::conn.xml</types1:EntryId>
+      <types1:Name>Salesforce</types1:Name>
+      <types1:MimeType>application/xml+connection</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags>.agent:infaw2k12</types1:Tags>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>maraujo@latampresales.org</types1:CreatedBy>
+      <types1:CreationDate>2023-02-01T21:47:22Z</types1:CreationDate>
+      <types1:ModifiedBy>maraujo@latampresales.org</types1:ModifiedBy>
+      <types1:ModificationDate>2023-02-01T21:49:12Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>maraujo@latampresales.org</types1:PublishedBy>
+      <types1:PublicationDate>2023-02-01T21:53:37Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/rt.connection/Salesforce/Salesforce.conn.xml</types1:PublishedContributionId>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <connection xmlns="http://schemas.informatica.com/socrates/data-services/2014/04/avosConnections.xsd"
+                     displayName="Salesforce"
+                     label="Salesforce"
+                     name="Salesforce">
+            <description/>
+            <tags>.agent:infaw2k12</tags>
+            <agent>infaw2k12</agent>
+            <attributes>
+               <attribute name="objectFilter" value=""/>
+            </attributes>
+            <soaConnector xmlns="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd"
+                          connectorPath="project:/com.activevos.cumulus.cloud.extend.playbook.configuration/config/sfConnector.xml"
+                          name="Salesforce"
+                          supportsConnectionTest="true"
+                          supportsOData="true"
+                          supportsPublishSkipMetadataRefresh="true"
+                          uuid="05fc48f1-e6e1-441b-b700-bac396ca2ed1">
+               <description>Salesforce.com SOA based data connector.</description>
+            </soaConnector>
+            <authentication type="$infa_basicform">
+               <attributes>
+                  <attribute encrypted="false" name="username" value="mra5800_06@gmail.com"/>
+                  <attribute encrypted="true" name="password" value=""/>
+                  <attribute encrypted="true" name="token" value=""/>
+                  <attribute encrypted="false"
+                             name="serviceUrl"
+                             value="https://login.salesforce.com/services/Soap/c/46.0"/>
+                  <attribute encrypted="true" name="clientId" value=""/>
+                  <attribute encrypted="true" name="clientSecret" value=""/>
+               </attributes>
+            </authentication>
+         </connection>
+      </types1:Entry>
+      <types1:GUID>8U7S8lSjGUbkfT1mluOVwy</types1:GUID>
+      <types1:DisplayName>Salesforce</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2023-08-07T19:13:03.893Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
