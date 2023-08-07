@@ -1,0 +1,24 @@
+{
+  "objectInfo" : {
+    "id" : "8ODyZdGzaAvgdfAEJcgDk0",
+    "name" : "S-0304-OracleConnection",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "wqwx8R8WrY1Sypm-gt-68109966-2023-01-30T22:38:16.364Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "objectRefs" : [ ]
+}
