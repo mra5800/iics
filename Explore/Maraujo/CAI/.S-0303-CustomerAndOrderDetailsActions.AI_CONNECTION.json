@@ -1,0 +1,44 @@
+{
+  "objectInfo" : {
+    "id" : "6oTN0Lcw2Rzd6E99TwOIw2",
+    "name" : "S-0303-CustomerAndOrderDetailsActions",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "DAOi6X4ZnchKGXS-gt-68681018-2023-01-30T21:52:12.473Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "objectRefs" : [ {
+    "id" : "6XbXQN2sTG5ktiEcycszCS",
+    "name" : "S_0302_CustomerOrderInfo",
+    "type" : "AI_SERVICE_CONNECTOR",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "B5RgpDqotxGomUh-gt-59829048-2023-01-24T21:22:58.446Z::svc.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Maraujo/CAI"
+  } ]
+}

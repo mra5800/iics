@@ -1,0 +1,47 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>DAOi6X4ZnchKGXS-gt-68681018-2023-01-30T21:52:12.473Z::conn.xml</types1:EntryId>
+      <types1:Name>S-0303-CustomerAndOrderDetailsActions</types1:Name>
+      <types1:ParentFlowIds>Bt0i98C1LOwD0wW-gt-40273139-2023-02-01T20:59:21.439Z::pd.xml</types1:ParentFlowIds>
+      <types1:MimeType>application/xml+connection</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>maraujo@latampresales.org</types1:CreatedBy>
+      <types1:CreationDate>2023-01-30T21:52:12Z</types1:CreationDate>
+      <types1:ModifiedBy>maraujo@latampresales.org</types1:ModifiedBy>
+      <types1:ModificationDate>2023-01-30T22:34:59Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>maraujo@latampresales.org</types1:PublishedBy>
+      <types1:PublicationDate>2023-01-30T22:35:15Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/rt.connection/S-0303-CustomerAndOrderDetailsActions/S-0303-CustomerAndOrderDetailsActions.conn.xml</types1:PublishedContributionId>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <connection xmlns="http://schemas.informatica.com/socrates/data-services/2014/04/avosConnections.xsd"
+                     displayName="S-0303-CustomerAndOrderDetailsActions"
+                     label="S-0303-CustomerAndOrderDetailsActions"
+                     name="S-0303-CustomerAndOrderDetailsActions">
+            <description/>
+            <tags/>
+            <agent/>
+            <attributes/>
+            <businessConnector xmlns="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd"
+                               agentOnly="false"
+                               connectorPath="project:/rt.connector/S_0302_CustomerOrderInfo/S_0302_CustomerOrderInfo_svcDef.xml"
+                               guid="6XbXQN2sTG5ktiEcycszCS"
+                               name="S_0302_CustomerOrderInfo"
+                               supportsConnectionTest="false"
+                               uuid="96458a30-276a-4d48-a7c2-8524738b23c8">
+               <description/>
+            </businessConnector>
+         </connection>
+      </types1:Entry>
+      <types1:GUID>6oTN0Lcw2Rzd6E99TwOIw2</types1:GUID>
+      <types1:DisplayName>S-0303-CustomerAndOrderDetailsActions</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2023-08-07T19:56:16.854Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
