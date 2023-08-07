@@ -1,0 +1,22 @@
+{
+  "objectInfo" : {
+    "id" : "4lt5jrZOMlahElWdtfJ9mV",
+    "name" : "Maraujo",
+    "type" : "Project",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Workspace - Marcelo Araujo",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "objectRefs" : [ ]
+}
