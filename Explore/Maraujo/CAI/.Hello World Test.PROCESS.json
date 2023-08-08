@@ -1,0 +1,24 @@
+{
+  "objectInfo" : {
+    "id" : "5JqmSB5MymRlAS3F7npMUH",
+    "name" : "Hello World Test",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "bf6A1vyoY2G7QnG-gt-2198075-2023-08-08T15:01:24.031Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : null,
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "objectRefs" : [ ]
+}
