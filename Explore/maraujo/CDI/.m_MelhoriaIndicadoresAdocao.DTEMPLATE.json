@@ -18,12 +18,12 @@
       "additionalInfo" : {
         "description" : "",
         "contentType" : "JSON",
-        "documentState" : "INVALID"
+        "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-10-25T17:21:49.912Z",
+  "updateTime" : "2023-10-25T17:45:52.977Z",
   "objectRefs" : [ {
     "id" : "278ZppdhN4meF4fJ0kBfet",
     "name" : "CN_ORA_INFA_POC_BRA",
@@ -35,6 +35,26 @@
       },
       "repoInfo" : {
         "repoHandle" : "010T4Z0B00000000001K"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "502LmwpPlogcHIUhYWVy46",
+    "name" : "RLV_CN_C2C_IDQ_Flat_Output",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010T4Z0B00000000001G"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
