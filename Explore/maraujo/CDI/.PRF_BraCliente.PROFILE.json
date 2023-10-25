@@ -1,0 +1,85 @@
+{
+  "objectInfo" : {
+    "id" : "6vQhKHNxmEjfhN7CZMTvMl",
+    "name" : "PRF_BraCliente",
+    "type" : "PROFILE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "2e5a40f4-4373-4b19-871d-227d0a00ec3e"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "json",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2023-10-25T17:21:49.911Z",
+  "objectRefs" : [ {
+    "id" : "46FUIJNNwi4dM1HxXphACQ",
+    "name" : "rule_EMAIL_Validation",
+    "type" : "RULE_SPECIFICATION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "46FUIJNNwi4dM1HxXphACQ"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Rule is used to validate email address are in proper format",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/DataMesh/Shared DQ Assets"
+  }, {
+    "id" : "4XnoKQ9gaKwgoklu080mYm",
+    "name" : "RS_CPF",
+    "type" : "RULE_SPECIFICATION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "4XnoKQ9gaKwgoklu080mYm"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Valida digito verificador do CPF\n- Somente Números\n- Sem repetição\n- Strings menores que 6 bytes são inválidas",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Custom BRA Bundle"
+  }, {
+    "id" : "278ZppdhN4meF4fJ0kBfet",
+    "name" : "CN_ORA_INFA_POC_BRA",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010T4Z0B00000000001K"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ]
+}

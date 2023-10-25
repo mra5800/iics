@@ -1,0 +1,45 @@
+{
+  "objectInfo" : {
+    "id" : "87r7hCqZp9Jk5CyOUIFXYU",
+    "name" : "PRF_BraTelefone",
+    "type" : "PROFILE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01782b34-322e-4d58-8492-5d3b3625f88b"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "json",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2023-10-25T17:21:49.909Z",
+  "objectRefs" : [ {
+    "id" : "278ZppdhN4meF4fJ0kBfet",
+    "name" : "CN_ORA_INFA_POC_BRA",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010T4Z0B00000000001K"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ]
+}

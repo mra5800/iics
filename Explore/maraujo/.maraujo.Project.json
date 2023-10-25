@@ -1,0 +1,23 @@
+{
+  "objectInfo" : {
+    "id" : "1Q6VTUUvNY4ixUrl8HKswd",
+    "name" : "maraujo",
+    "type" : "Project",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2023-10-25T17:21:49.910Z",
+  "objectRefs" : [ ]
+}

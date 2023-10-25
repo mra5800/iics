@@ -1,0 +1,45 @@
+{
+  "objectInfo" : {
+    "id" : "2q4eRuXDN59hWy8qalO3K5",
+    "name" : "PRF_BraFita",
+    "type" : "PROFILE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0e32d083-b571-4c95-b001-6098e88bbfa1"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "json",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2023-10-25T17:21:49.910Z",
+  "objectRefs" : [ {
+    "id" : "278ZppdhN4meF4fJ0kBfet",
+    "name" : "CN_ORA_INFA_POC_BRA",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010T4Z0B00000000001K"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ]
+}
