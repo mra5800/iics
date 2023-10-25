@@ -1,0 +1,48 @@
+{
+  "objectInfo" : {
+    "id" : "h48Zs6zNsQ3fD1YlDOKXkg",
+    "name" : "tkf_MelhoriaIndicadoresAdocao",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "KkQIW3Ni7A7vNlj-gt-672550-2023-10-25T17:50:20.584Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2023-10-25T17:52:55.224Z",
+  "objectRefs" : [ {
+    "id" : "aFTnQqlBFskbQ7a8SKHKMp",
+    "name" : "mt_MelhoriaIndicadoresAdocao",
+    "type" : "MTT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010T4Z0Z00000000001X"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/maraujo/CDI"
+  } ]
+}

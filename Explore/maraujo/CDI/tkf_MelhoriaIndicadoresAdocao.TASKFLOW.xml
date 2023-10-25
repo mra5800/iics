@@ -1,0 +1,169 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>KkQIW3Ni7A7vNlj-gt-672550-2023-10-25T17:50:20.584Z::tf.xml</types1:EntryId>
+      <types1:Name>tkf_MelhoriaIndicadoresAdocao</types1:Name>
+      <types1:MimeType>application/xml+taskflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>maraujo_LATAM_Carlos_tspod</types1:CreatedBy>
+      <types1:CreationDate>2023-10-25T17:50:21Z</types1:CreationDate>
+      <types1:ModifiedBy>maraujo_LATAM_Carlos_tspod</types1:ModifiedBy>
+      <types1:ModificationDate>2023-10-25T17:50:51Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>maraujo_LATAM_Carlos_tspod</types1:PublishedBy>
+      <types1:PublicationDate>2023-10-25T17:50:56Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/tf.tkf_MelhoriaIndicadoresAdocao/tkf_MelhoriaIndicadoresAdocao.tf.xml</types1:PublishedContributionId>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <taskflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                   xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                   xmlns:list="urn:activevos:spi:list:functions"
+                   displayName="tkf_MelhoriaIndicadoresAdocao"
+                   name="tkf_MelhoriaIndicadoresAdocao"
+                   overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <tempFields>
+               <field description="" name="mt_MelhoriaIndicadoresAdocao" type="reference">
+                  <options>
+                     <option name="failOnNotRun">false</option>
+                     <option name="failOnFault">false</option>
+                     <option name="referenceTo">$po:mt-MelhoriaIndicadoresAdocao</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="verbose">
+               <rest/>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="lo61s3t1" targetId="lo61s3to"/>
+               </start>
+               <eventContainer id="lo61s3to">
+                  <service id="lo61s3t0">
+                     <title>mt_MelhoriaIndicadoresAdocao</title>
+                     <serviceName>ICSExecuteDataTask</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                        <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                        <parameter name="Task Name" source="constant" updatable="true">mt_MelhoriaIndicadoresAdocao</parameter>
+                        <parameter name="GUID" source="constant" updatable="true">aFTnQqlBFskbQ7a8SKHKMp</parameter>
+                        <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                        <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="mt-MelhoriaIndicadoresAdocao">temp.mt_MelhoriaIndicadoresAdocao</operation>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field"
+                                   to="temp.mt_MelhoriaIndicadoresAdocao/output/Object_Name">Object Name</operation>
+                        <operation source="field" to="temp.mt_MelhoriaIndicadoresAdocao/output/Run_Id">Run Id</operation>
+                        <operation source="field" to="temp.mt_MelhoriaIndicadoresAdocao/output/Log_Id">Log Id</operation>
+                        <operation source="field" to="temp.mt_MelhoriaIndicadoresAdocao/output/Task_Id">Task Id</operation>
+                        <operation source="field"
+                                   to="temp.mt_MelhoriaIndicadoresAdocao/output/Task_Status">Task Status</operation>
+                        <operation source="field"
+                                   to="temp.mt_MelhoriaIndicadoresAdocao/output/Success_Source_Rows">Success Source Rows</operation>
+                        <operation source="field"
+                                   to="temp.mt_MelhoriaIndicadoresAdocao/output/Failed_Source_Rows">Failed Source Rows</operation>
+                        <operation source="field"
+                                   to="temp.mt_MelhoriaIndicadoresAdocao/output/Success_Target_Rows">Success Target Rows</operation>
+                        <operation source="field"
+                                   to="temp.mt_MelhoriaIndicadoresAdocao/output/Failed_Target_Rows">Failed Target Rows</operation>
+                        <operation source="field" to="temp.mt_MelhoriaIndicadoresAdocao/output/Start_Time">Start Time</operation>
+                        <operation source="field" to="temp.mt_MelhoriaIndicadoresAdocao/output/End_Time">End Time</operation>
+                        <operation source="field"
+                                   to="temp.mt_MelhoriaIndicadoresAdocao/output/Error_Message">Error Message</operation>
+                        <operation source="field"
+                                   to="temp.mt_MelhoriaIndicadoresAdocao/output/TotalTransErrors">Total Transformation Errors</operation>
+                        <operation source="field"
+                                   to="temp.mt_MelhoriaIndicadoresAdocao/output/FirstErrorCode">First Error Code</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="lo61s3va" targetId="lo61s3v9"/>
+                  <events>
+                     <catch faultField="temp.mt_MelhoriaIndicadoresAdocao/fault"
+                            id="lo61s3tm"
+                            interrupting="true"
+                            name="error">
+                        <suspend/>
+                     </catch>
+                     <catch faultField="temp.mt_MelhoriaIndicadoresAdocao/fault"
+                            id="lo61s3tn"
+                            interrupting="true"
+                            name="warning"/>
+                  </events>
+               </eventContainer>
+               <service id="lo61s3v9">
+                  <title>nt_ComunicaFinalizacaoAdocao</title>
+                  <serviceName>emailNotificationService</serviceName>
+                  <serviceGUID/>
+                  <serviceInput>
+                     <parameter name="Email To" source="constant">maraujo@informatica.com</parameter>
+                     <parameter name="Email Cc" source="constant"/>
+                     <parameter name="Email Bcc" source="constant"/>
+                     <parameter name="Email Subject" source="constant">Termino Carga --&gt; {$temp.mt_MelhoriaIndicadoresAdocao[1]/output[1]/Object_Name}</parameter>
+                     <parameter name="Email Content Type" source="constant">text</parameter>
+                     <parameter name="Email Body" source="constant">&lt;p&gt;Sr, interessado.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;O processo de carga {$temp.mt_MelhoriaIndicadoresAdocao[1]/output[1]/Object_Name} foi concluido com {$temp.mt_MelhoriaIndicadoresAdocao[1]/output[1]/Task_Status}.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;O número de registros gravados com sucesso foi: {$temp.mt_MelhoriaIndicadoresAdocao[1]/output[1]/Success_Target_Rows}&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Obrigado,&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Operações&lt;/p&gt;</parameter>
+                  </serviceInput>
+                  <serviceOutput/>
+                  <link id="lo61s3vb" targetId="c"/>
+               </service>
+               <end id="c"/>
+            </flow>
+            <dependencies>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mt-MelhoriaIndicadoresAdocao"
+                              isByCopy="true"
+                              name="mt-MelhoriaIndicadoresAdocao">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="TaskProperties Parameters"
+                            name="taskProperties"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Max Wait (Seconds)"
+                            name="Max_Wait"
+                            nullable="true"
+                            required="false"
+                            type="int"/>
+                  </detail>
+               </processObject>
+            </dependencies>
+         </taskflow>
+      </types1:Entry>
+      <types1:GUID>h48Zs6zNsQ3fD1YlDOKXkg</types1:GUID>
+      <types1:DisplayName>tkf_MelhoriaIndicadoresAdocao</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2023-10-25T17:52:55.081Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
