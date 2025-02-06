@@ -1,0 +1,70 @@
+{
+  "objectInfo" : {
+    "id" : "1dnyenDRPmfkHdHjBPlcMx",
+    "name" : "m_MelhoriaIndicadoresAdocao_CPF_Valido",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010U9N1700000000000V"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2025-02-06T19:44:20.968Z",
+  "objectRefs" : [ {
+    "id" : "0N5iLpK9SG5jBucOobe2Mv",
+    "name" : "RS_CPF",
+    "type" : "RULE_SPECIFICATION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0N5iLpK9SG5jBucOobe2Mv"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Valida digito verificador do CPF\n- Somente Números\n- Sem repetição\n- Strings menores que 6 bytes são inválidas",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Demonstração/CDQ"
+  }, {
+    "id" : "aq8w7IdfRqRbEiOTrVPBMt",
+    "name" : "CN_FLATFILE_MARAUJO",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010U9N0B00000000000L"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
