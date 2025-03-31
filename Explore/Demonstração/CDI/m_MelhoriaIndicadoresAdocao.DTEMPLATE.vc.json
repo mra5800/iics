@@ -1597,6 +1597,11 @@
             "fieldName" : "CLI_cd_profissao",
             "filterValue" : "519",
             "operator" : "="
+          },
+          {
+            "fieldName" : "CLI_tp_registro",
+            "filterValue" : "1",
+            "operator" : "="
           }
         ]
       },
@@ -1866,5 +1871,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2025-03-31 11:36:15 BRT"
+  "vcsExportTime" : "2025-03-31 11:41:35 BRT"
 }

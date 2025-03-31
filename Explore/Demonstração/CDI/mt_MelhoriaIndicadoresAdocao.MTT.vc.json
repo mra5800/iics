@@ -1,5 +1,10 @@
 {
   "name" : "mt_MelhoriaIndicadoresAdocao",
+  "description" : "mt_MelhoriaIndicadoresAdocao",
+  "successTaskEmail" : {
+    "emails" : "maraujo@informatica.com",
+    "emailType" : "SUCCESS"
+  },
   "runtimeEnvironmentId" : "@55XRij1IQYejlGlxBTPC2h",
   "runtimeEnvironmentName" : "idmc06-latam-carlos-primary.infacloud.eu",
   "maxLogs" : 10,
@@ -185,6 +190,7 @@
       "userUpdated" : true,
       "unspecified" : false,
       "fetchMode" : "ORIGINAL",
+      "targetSchemaMode" : "DONT_APPLY_CHANGES",
       "runtimeParameterData" : {
         "connectionRuntimeParameter" : false,
         "objectRuntimeParameter" : false
@@ -241,6 +247,7 @@
       "userUpdated" : true,
       "unspecified" : false,
       "fetchMode" : "ORIGINAL",
+      "targetSchemaMode" : "DONT_APPLY_CHANGES",
       "runtimeParameterData" : {
         "connectionRuntimeParameter" : false,
         "objectRuntimeParameter" : false
@@ -249,7 +256,7 @@
       "fileList" : false
     }
   ],
-  "verbose" : false,
+  "verbose" : true,
   "lastRunTime" : 1725567293000,
   "mappingId" : "@iPecEKcDxKBbBUPB1cFrcH",
   "mappingTemplateName" : "m_MelhoriaIndicadoresAdocao",
@@ -278,5 +285,5 @@
   "optimizationPlan" : "NONE",
   "allowMaxFieldLength" : false,
   "midstreamPreview" : false,
-  "vcsExportTime" : "2025-03-31 11:35:31 BRT"
+  "vcsExportTime" : "2025-03-31 11:41:36 BRT"
 }
