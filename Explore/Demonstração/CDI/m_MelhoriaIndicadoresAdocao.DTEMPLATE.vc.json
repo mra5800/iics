@@ -24,10 +24,13 @@
         "link" : "FIL_CLIENTE_TELEFONE_PROFISSAO -> AGG_CLIENTE_TELEFONE_CONTAGEM"
       },
       {
-        "link" : "FIL_CLIENTE_TELEFONE_PROFISSAO -> TGT_ClientesTelefone"
+        "link" : "AGG_CLIENTE_TELEFONE_CONTAGEM -> TGT_ClientesTelefone_AGG"
       },
       {
-        "link" : "AGG_CLIENTE_TELEFONE_CONTAGEM -> TGT_ClientesTelefone_AGG"
+        "link" : "srt_ORDENAÇÃO_SAIDA -> TGT_ClientesTelefone"
+      },
+      {
+        "link" : "FIL_CLIENTE_TELEFONE_PROFISSAO -> srt_ORDENAÇÃO_SAIDA"
       }
     ],
     "transformations" : [
@@ -1868,8 +1871,1028 @@
             "useSuccessFile" : "false"
           }
         }
+      },
+      {
+        "createTime" : "2025-06-11T19:14:13.637Z",
+        "name" : "srt_ORDENAÇÃO_SAIDA",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "sorterMode" : "SIMPLE",
+        "sortEntries" : [
+          {
+            "ascending" : "true",
+            "fieldName" : "CLI_nome"
+          }
+        ]
+      },
+      {
+        "createTime" : "2025-06-11T19:14:55.003Z",
+        "name" : "SRC_BRA_CLIENTE",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "TP_REGISTRO"
+            },
+            "name" : "TP_REGISTRO",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DT_ATUALZ_CAD"
+            },
+            "name" : "DT_ATUALZ_CAD",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CPF"
+            },
+            "name" : "CPF",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 300,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "NOME"
+            },
+            "name" : "NOME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SEXO"
+            },
+            "name" : "SEXO",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DT_NASC"
+            },
+            "name" : "DT_NASC",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "NOME_MAE"
+            },
+            "name" : "NOME_MAE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DT_OBITO"
+            },
+            "name" : "DT_OBITO",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FLAG_OBITO"
+            },
+            "name" : "FLAG_OBITO",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SIT_CAD"
+            },
+            "name" : "SIT_CAD",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DT_SIT_CAD"
+            },
+            "name" : "DT_SIT_CAD",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "RG"
+            },
+            "name" : "RG",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ORG_EMIS"
+            },
+            "name" : "ORG_EMIS",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "EST_EMIS"
+            },
+            "name" : "EST_EMIS",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "NACIONALIDADE"
+            },
+            "name" : "NACIONALIDADE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "EST_CIVIL"
+            },
+            "name" : "EST_CIVIL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DESC_EST_CIVIL"
+            },
+            "name" : "DESC_EST_CIVIL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DT_ATUALZ_EST_CIVIL"
+            },
+            "name" : "DT_ATUALZ_EST_CIVIL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CPF_CONJUGE"
+            },
+            "name" : "CPF_CONJUGE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "NOME_CONJUGE"
+            },
+            "name" : "NOME_CONJUGE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CD_PROFISSAO"
+            },
+            "name" : "CD_PROFISSAO",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PROFISSAO"
+            },
+            "name" : "PROFISSAO",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DT_ATUALZ_PROFISSAO"
+            },
+            "name" : "DT_ATUALZ_PROFISSAO",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FX_RENDA"
+            },
+            "name" : "FX_RENDA",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "VL_RENDA"
+            },
+            "name" : "VL_RENDA",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CPF_HOUSEHOLD"
+            },
+            "name" : "CPF_HOUSEHOLD",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "BOLSA_FAMILIA"
+            },
+            "name" : "BOLSA_FAMILIA",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "NIS"
+            },
+            "name" : "NIS",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TIT_ELEITOR"
+            },
+            "name" : "TIT_ELEITOR",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ZONA"
+            },
+            "name" : "ZONA",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SECAO"
+            },
+            "name" : "SECAO",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "EMAIL"
+            },
+            "name" : "EMAIL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FLAG_PPE"
+            },
+            "name" : "FLAG_PPE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "NOME_ARQ_INGTAO"
+            },
+            "name" : "NOME_ARQ_INGTAO",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "DT_INGTAO_PTCAO"
+            },
+            "name" : "DT_INGTAO_PTCAO",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 510,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@aOgq2XzqpfSeVIChgbSzoZ",
+          "connectionName" : "NSEN - BRA_DEMO",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "Oracle",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "NSEN/BRA_CLIENTE",
+            "dbSchema" : "NSEN",
+            "label" : "BRA_CLIENTE",
+            "objectName" : "BRA_CLIENTE",
+            "path" : "NSEN/BRA_CLIENTE",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "TP_REGISTRO",
+                "fieldType" : "CONNECTOR",
+                "label" : "TP_REGISTRO",
+                "nativeName" : "TP_REGISTRO",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "DT_ATUALZ_CAD",
+                "fieldType" : "CONNECTOR",
+                "label" : "DT_ATUALZ_CAD",
+                "nativeName" : "DT_ATUALZ_CAD",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "CPF",
+                "fieldType" : "CONNECTOR",
+                "label" : "CPF",
+                "nativeName" : "CPF",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 300,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "NOME",
+                "fieldType" : "CONNECTOR",
+                "label" : "NOME",
+                "nativeName" : "NOME",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "SEXO",
+                "fieldType" : "CONNECTOR",
+                "label" : "SEXO",
+                "nativeName" : "SEXO",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "DT_NASC",
+                "fieldType" : "CONNECTOR",
+                "label" : "DT_NASC",
+                "nativeName" : "DT_NASC",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "NOME_MAE",
+                "fieldType" : "CONNECTOR",
+                "label" : "NOME_MAE",
+                "nativeName" : "NOME_MAE",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "DT_OBITO",
+                "fieldType" : "CONNECTOR",
+                "label" : "DT_OBITO",
+                "nativeName" : "DT_OBITO",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "FLAG_OBITO",
+                "fieldType" : "CONNECTOR",
+                "label" : "FLAG_OBITO",
+                "nativeName" : "FLAG_OBITO",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "SIT_CAD",
+                "fieldType" : "CONNECTOR",
+                "label" : "SIT_CAD",
+                "nativeName" : "SIT_CAD",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "DT_SIT_CAD",
+                "fieldType" : "CONNECTOR",
+                "label" : "DT_SIT_CAD",
+                "nativeName" : "DT_SIT_CAD",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "RG",
+                "fieldType" : "CONNECTOR",
+                "label" : "RG",
+                "nativeName" : "RG",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "ORG_EMIS",
+                "fieldType" : "CONNECTOR",
+                "label" : "ORG_EMIS",
+                "nativeName" : "ORG_EMIS",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "EST_EMIS",
+                "fieldType" : "CONNECTOR",
+                "label" : "EST_EMIS",
+                "nativeName" : "EST_EMIS",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "NACIONALIDADE",
+                "fieldType" : "CONNECTOR",
+                "label" : "NACIONALIDADE",
+                "nativeName" : "NACIONALIDADE",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "EST_CIVIL",
+                "fieldType" : "CONNECTOR",
+                "label" : "EST_CIVIL",
+                "nativeName" : "EST_CIVIL",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "DESC_EST_CIVIL",
+                "fieldType" : "CONNECTOR",
+                "label" : "DESC_EST_CIVIL",
+                "nativeName" : "DESC_EST_CIVIL",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "DT_ATUALZ_EST_CIVIL",
+                "fieldType" : "CONNECTOR",
+                "label" : "DT_ATUALZ_EST_CIVIL",
+                "nativeName" : "DT_ATUALZ_EST_CIVIL",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "CPF_CONJUGE",
+                "fieldType" : "CONNECTOR",
+                "label" : "CPF_CONJUGE",
+                "nativeName" : "CPF_CONJUGE",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "NOME_CONJUGE",
+                "fieldType" : "CONNECTOR",
+                "label" : "NOME_CONJUGE",
+                "nativeName" : "NOME_CONJUGE",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "CD_PROFISSAO",
+                "fieldType" : "CONNECTOR",
+                "label" : "CD_PROFISSAO",
+                "nativeName" : "CD_PROFISSAO",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "PROFISSAO",
+                "fieldType" : "CONNECTOR",
+                "label" : "PROFISSAO",
+                "nativeName" : "PROFISSAO",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "DT_ATUALZ_PROFISSAO",
+                "fieldType" : "CONNECTOR",
+                "label" : "DT_ATUALZ_PROFISSAO",
+                "nativeName" : "DT_ATUALZ_PROFISSAO",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "FX_RENDA",
+                "fieldType" : "CONNECTOR",
+                "label" : "FX_RENDA",
+                "nativeName" : "FX_RENDA",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "VL_RENDA",
+                "fieldType" : "CONNECTOR",
+                "label" : "VL_RENDA",
+                "nativeName" : "VL_RENDA",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "CPF_HOUSEHOLD",
+                "fieldType" : "CONNECTOR",
+                "label" : "CPF_HOUSEHOLD",
+                "nativeName" : "CPF_HOUSEHOLD",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "BOLSA_FAMILIA",
+                "fieldType" : "CONNECTOR",
+                "label" : "BOLSA_FAMILIA",
+                "nativeName" : "BOLSA_FAMILIA",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "NIS",
+                "fieldType" : "CONNECTOR",
+                "label" : "NIS",
+                "nativeName" : "NIS",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "TIT_ELEITOR",
+                "fieldType" : "CONNECTOR",
+                "label" : "TIT_ELEITOR",
+                "nativeName" : "TIT_ELEITOR",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "ZONA",
+                "fieldType" : "CONNECTOR",
+                "label" : "ZONA",
+                "nativeName" : "ZONA",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "SECAO",
+                "fieldType" : "CONNECTOR",
+                "label" : "SECAO",
+                "nativeName" : "SECAO",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "EMAIL",
+                "fieldType" : "CONNECTOR",
+                "label" : "EMAIL",
+                "nativeName" : "EMAIL",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "FLAG_PPE",
+                "fieldType" : "CONNECTOR",
+                "label" : "FLAG_PPE",
+                "nativeName" : "FLAG_PPE",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "NOME_ARQ_INGTAO",
+                "fieldType" : "CONNECTOR",
+                "label" : "NOME_ARQ_INGTAO",
+                "nativeName" : "NOME_ARQ_INGTAO",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              },
+              {
+                "name" : "DT_INGTAO_PTCAO",
+                "fieldType" : "CONNECTOR",
+                "label" : "DT_INGTAO_PTCAO",
+                "nativeName" : "DT_INGTAO_PTCAO",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 510,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "NSEN/BRA_CLIENTE"
+                  }
+                ]
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
       }
     ]
   },
-  "vcsExportTime" : "2025-06-11 16:13:04 BRT"
+  "vcsExportTime" : "2025-06-11 16:17:41 BRT"
 }

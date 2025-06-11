@@ -18,12 +18,12 @@
       "additionalInfo" : {
         "description" : "",
         "contentType" : "JSON",
-        "documentState" : "VALID"
+        "documentState" : "INVALID"
       }
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2025-06-11T19:13:04.772Z",
+  "updateTime" : "2025-06-11T19:17:41.587Z",
   "objectRefs" : [ {
     "id" : "aq8w7IdfRqRbEiOTrVPBMt",
     "name" : "CN_FLATFILE_MARAUJO",
@@ -35,6 +35,26 @@
       },
       "repoInfo" : {
         "repoHandle" : "010U9N0B00000000000L"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "aOgq2XzqpfSeVIChgbSzoZ",
+    "name" : "NSEN - BRA_DEMO",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010U9N0B000000000013"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
