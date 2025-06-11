@@ -1501,11 +1501,11 @@
           },
           {
             "name" : "Sorted Input",
-            "value" : "false"
+            "value" : "true"
           },
           {
             "name" : "Master Sort Order",
-            "value" : "AUTO"
+            "value" : "Ascending"
           },
           {
             "name" : "Transformation Scope",
@@ -1871,5 +1871,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2025-06-06 15:00:09 BRT"
+  "vcsExportTime" : "2025-06-11 16:13:04 BRT"
 }
