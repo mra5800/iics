@@ -1,0 +1,81 @@
+{
+  "objectInfo" : {
+    "id" : "2u4sJTlotUbevTGXjszVkF",
+    "name" : "Veiculos_Search",
+    "type" : "MDM_APP_COMPONENT",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "c360" : {
+          "version" : "202407.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "b360" : {
+          "version" : "202407.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED"
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "veiculos_search"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  },
+  "dataFileExtension" : "dat",
+  "updateTime" : "2025-09-29T13:47:40.708Z",
+  "objectRefs" : [ {
+    "id" : "5ssMVlhDrpfdhHCxuStws8",
+    "name" : "Veiculos",
+    "type" : "MDM_BUSINESS_ENTITY",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "c360" : {
+          "version" : "202407.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "b360" : {
+          "version" : "202407.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED"
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "veiculos"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/Explore/Demonstração/MDM"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

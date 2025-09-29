@@ -1,0 +1,44 @@
+{
+  "objectInfo" : {
+    "id" : "fpJYQJCeTK0lBO9IE4kCUv",
+    "name" : "SISTEMA_ORACLE",
+    "type" : "MDM_SRC_SYSTEM",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "c360" : {
+          "version" : "202407.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "b360" : {
+          "version" : "202407.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED"
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "sistema_oracle"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  },
+  "dataFileExtension" : "dat",
+  "updateTime" : "2025-09-29T13:47:40.709Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

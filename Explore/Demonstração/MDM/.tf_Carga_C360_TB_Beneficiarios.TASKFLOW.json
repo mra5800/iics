@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "6tSciTBS4WOk8NGtCHEWy1",
+    "name" : "tf_Carga_C360_TB_Beneficiarios",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "UJsJGD4ARW8UBM7-gt-168109-2025-09-18T11:52:42.745Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2025-09-29T13:47:40.707Z",
+  "objectRefs" : [ {
+    "id" : "7n422Pgtjn8gmftZ42B6oY",
+    "name" : "mt_Carga_C360_TB_Beneficiarios",
+    "type" : "MTT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010U9N0Z00000000000V"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Demonstração/VELOE"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

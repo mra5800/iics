@@ -1,0 +1,158 @@
+{
+  "objectInfo" : {
+    "id" : "0xXmW1d49UclISXxKCuzMf",
+    "name" : "Carga_TB_Beneficiários_DB",
+    "type" : "MDM_JOB_DEFINITION",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "c360" : {
+          "version" : "202407.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "b360" : {
+          "version" : "202407.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED"
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "carga_tb_benefici_rios_db"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  },
+  "dataFileExtension" : "dat",
+  "updateTime" : "2025-09-29T13:47:40.707Z",
+  "objectRefs" : [ {
+    "id" : "6tSciTBS4WOk8NGtCHEWy1",
+    "name" : "tf_Carga_C360_TB_Beneficiarios",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "UJsJGD4ARW8UBM7-gt-168109-2025-09-18T11:52:42.745Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Demonstração/MDM"
+  }, {
+    "id" : "eFmlWYQWge6iLczsMmjMCw",
+    "name" : "Person",
+    "type" : "MDM_BUSINESS_ENTITY",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "c360" : {
+          "version" : "202407.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "b360" : {
+          "version" : "202407.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED"
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "c360.person"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/Explore/Customer360"
+  }, {
+    "id" : "0dX76wRniW1bJ4RRoqYmuf",
+    "name" : "MDMIngress",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "chKGXShOeCFk4Ad-gt-201704-2024-03-11T17:55:30.03Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Business360"
+  }, {
+    "id" : "fpJYQJCeTK0lBO9IE4kCUv",
+    "name" : "SISTEMA_ORACLE",
+    "type" : "MDM_SRC_SYSTEM",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "c360" : {
+          "version" : "202407.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "b360" : {
+          "version" : "202407.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED"
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "sistema_oracle"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/Explore/Demonstração/MDM"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

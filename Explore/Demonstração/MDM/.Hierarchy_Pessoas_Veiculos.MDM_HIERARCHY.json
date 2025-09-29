@@ -1,0 +1,158 @@
+{
+  "objectInfo" : {
+    "id" : "72DSGtiXKqQc2fc0wusRau",
+    "name" : "Hierarchy_Pessoas_Veiculos",
+    "type" : "MDM_HIERARCHY",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "c360" : {
+          "version" : "202407.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "b360" : {
+          "version" : "202407.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED"
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "hierarchy_pessoas_veiculos_hierarchy"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  },
+  "dataFileExtension" : "dat",
+  "updateTime" : "2025-09-29T13:47:40.709Z",
+  "objectRefs" : [ {
+    "id" : "5ssMVlhDrpfdhHCxuStws8",
+    "name" : "Veiculos",
+    "type" : "MDM_BUSINESS_ENTITY",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "c360" : {
+          "version" : "202407.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "b360" : {
+          "version" : "202407.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED"
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "veiculos"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/Explore/Demonstração/MDM"
+  }, {
+    "id" : "2Ab2KWnUoIWedScrf8ZXKO",
+    "name" : "Address_Verifier_OOTB",
+    "type" : "VERIFIER",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "2Ab2KWnUoIWedScrf8ZXKO"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Verifies the address.",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/Explore/Business360"
+  }, {
+    "id" : "eFmlWYQWge6iLczsMmjMCw",
+    "name" : "Person",
+    "type" : "MDM_BUSINESS_ENTITY",
+    "providerName" : "MDM",
+    "providerLevelValidator" : {
+      "solutionsToValidate" : {
+        "c360" : {
+          "version" : "202407.01"
+        },
+        "r360" : {
+          "version" : "default"
+        }
+      },
+      "additionalSolutionsInSource" : {
+        "b360" : {
+          "version" : "202407.01"
+        }
+      },
+      "vaderMigrationStatus" : "NOT_STARTED"
+    },
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 1
+      },
+      "repoInfo" : {
+        "repoHandle" : "c360.person"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/Explore/Customer360"
+  }, {
+    "id" : "1ckq3A1tLDkfHCaLl5NE4U",
+    "name" : "DUNS SSN Validation",
+    "type" : "RULE_SPECIFICATION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "1ckq3A1tLDkfHCaLl5NE4U"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Validates DUNS & SSN Number",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/Explore/Customer360"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
