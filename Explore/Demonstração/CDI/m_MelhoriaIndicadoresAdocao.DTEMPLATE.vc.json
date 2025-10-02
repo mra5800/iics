@@ -1612,6 +1612,7 @@
         ]
       },
       {
+        "description" : "Agregação de informações de clientes - Teste Claro",
         "createTime" : "2023-10-25T17:36:14.186Z",
         "name" : "AGG_CLIENTE_TELEFONE_CONTAGEM",
         "groups" : [
@@ -1906,5 +1907,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2025-10-02 14:43:00 BRT"
+  "vcsExportTime" : "2025-10-02 15:34:13 BRT"
 }
