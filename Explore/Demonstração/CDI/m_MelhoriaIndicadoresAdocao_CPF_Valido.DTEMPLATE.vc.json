@@ -1,0 +1,2029 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "m_MelhoriaIndicadoresAdocao_CPF_Valido",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "SRC_CLIENTE -> SRC_CLIENTE_CPF"
+      },
+      {
+        "link" : "SRC_TELEFONE -> JNR_CLIENTE_TELEFONE",
+        "groupLink" : "DefaultGroup -> Detail"
+      },
+      {
+        "link" : "JNR_CLIENTE_TELEFONE -> FIL_CLIENTE_TELEFONE_PROFISSAO",
+        "groupLink" : "OutputGroup -> DefaultGroup"
+      },
+      {
+        "link" : "FIL_CLIENTE_TELEFONE_PROFISSAO -> AGG_CLIENTE_TELEFONE_CONTAGEM"
+      },
+      {
+        "link" : "FIL_CLIENTE_TELEFONE_PROFISSAO -> TGT_ClientesTelefone"
+      },
+      {
+        "link" : "AGG_CLIENTE_TELEFONE_CONTAGEM -> TGT_ClientesTelefone_AGG"
+      },
+      {
+        "link" : "SRC_CLIENTE_CPF -> RS_Validação_CPF",
+        "groupLink" : "DefaultGroup -> Input group:"
+      },
+      {
+        "link" : "FIL_CPF_VALIDOS -> JNR_CLIENTE_TELEFONE",
+        "groupLink" : "DefaultGroup -> Master"
+      },
+      {
+        "link" : "RS_Validação_CPF -> FIL_CPF_VALIDOS",
+        "groupLink" : "MappletOutputTx_Output -> DefaultGroup"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2023-10-25T16:33:23.803Z",
+        "name" : "SRC_CLIENTE",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "tp_registro"
+            },
+            "name" : "tp_registro",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "dt_atualz_cad"
+            },
+            "name" : "dt_atualz_cad",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "cpf"
+            },
+            "name" : "cpf",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "nome"
+            },
+            "name" : "nome",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "sexo"
+            },
+            "name" : "sexo",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "dt_nasc"
+            },
+            "name" : "dt_nasc",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "nome_mae"
+            },
+            "name" : "nome_mae",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "dt_obito"
+            },
+            "name" : "dt_obito",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "flag_obito"
+            },
+            "name" : "flag_obito",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "sit_cad"
+            },
+            "name" : "sit_cad",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "dt_sit_cad"
+            },
+            "name" : "dt_sit_cad",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "rg"
+            },
+            "name" : "rg",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "org_emis"
+            },
+            "name" : "org_emis",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "est_emis"
+            },
+            "name" : "est_emis",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "nacionalidade"
+            },
+            "name" : "nacionalidade",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "est_civil"
+            },
+            "name" : "est_civil",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "desc_est_civil"
+            },
+            "name" : "desc_est_civil",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "dt_atualz_est_civil"
+            },
+            "name" : "dt_atualz_est_civil",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "cpf_conjuge"
+            },
+            "name" : "cpf_conjuge",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "nome_conjuge"
+            },
+            "name" : "nome_conjuge",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "cd_profissao"
+            },
+            "name" : "cd_profissao",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "profissao"
+            },
+            "name" : "profissao",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "dt_atualz_profissao"
+            },
+            "name" : "dt_atualz_profissao",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "fx_renda"
+            },
+            "name" : "fx_renda",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "vl_renda"
+            },
+            "name" : "vl_renda",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "cpf_household"
+            },
+            "name" : "cpf_household",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "bolsa_familia"
+            },
+            "name" : "bolsa_familia",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "nis"
+            },
+            "name" : "nis",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "tit_eleitor"
+            },
+            "name" : "tit_eleitor",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "zona"
+            },
+            "name" : "zona",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "secao"
+            },
+            "name" : "secao",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "email"
+            },
+            "name" : "email",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "flag_ppe"
+            },
+            "name" : "flag_ppe",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "nome_arq_ingtao"
+            },
+            "name" : "nome_arq_ingtao",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "dt_ingtao_ptcao"
+            },
+            "name" : "dt_ingtao_ptcao",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@aq8w7IdfRqRbEiOTrVPBMt",
+          "connectionName" : "CN_FLATFILE_MARAUJO",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "BRA_CLIENTE.csv",
+            "label" : "BRA_CLIENTE.csv",
+            "objectName" : "BRA_CLIENTE.csv",
+            "path" : "BRA_CLIENTE.csv",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "tp_registro",
+                "fieldType" : "CONNECTOR",
+                "label" : "tp_registro",
+                "nativeName" : "tp_registro",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "dt_atualz_cad",
+                "fieldType" : "CONNECTOR",
+                "label" : "dt_atualz_cad",
+                "nativeName" : "dt_atualz_cad",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "cpf",
+                "fieldType" : "CONNECTOR",
+                "label" : "cpf",
+                "nativeName" : "cpf",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "nome",
+                "fieldType" : "CONNECTOR",
+                "label" : "nome",
+                "nativeName" : "nome",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "sexo",
+                "fieldType" : "CONNECTOR",
+                "label" : "sexo",
+                "nativeName" : "sexo",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "dt_nasc",
+                "fieldType" : "CONNECTOR",
+                "label" : "dt_nasc",
+                "nativeName" : "dt_nasc",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "nome_mae",
+                "fieldType" : "CONNECTOR",
+                "label" : "nome_mae",
+                "nativeName" : "nome_mae",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "dt_obito",
+                "fieldType" : "CONNECTOR",
+                "label" : "dt_obito",
+                "nativeName" : "dt_obito",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "flag_obito",
+                "fieldType" : "CONNECTOR",
+                "label" : "flag_obito",
+                "nativeName" : "flag_obito",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "sit_cad",
+                "fieldType" : "CONNECTOR",
+                "label" : "sit_cad",
+                "nativeName" : "sit_cad",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "dt_sit_cad",
+                "fieldType" : "CONNECTOR",
+                "label" : "dt_sit_cad",
+                "nativeName" : "dt_sit_cad",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "rg",
+                "fieldType" : "CONNECTOR",
+                "label" : "rg",
+                "nativeName" : "rg",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "org_emis",
+                "fieldType" : "CONNECTOR",
+                "label" : "org_emis",
+                "nativeName" : "org_emis",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "est_emis",
+                "fieldType" : "CONNECTOR",
+                "label" : "est_emis",
+                "nativeName" : "est_emis",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "nacionalidade",
+                "fieldType" : "CONNECTOR",
+                "label" : "nacionalidade",
+                "nativeName" : "nacionalidade",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "est_civil",
+                "fieldType" : "CONNECTOR",
+                "label" : "est_civil",
+                "nativeName" : "est_civil",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "desc_est_civil",
+                "fieldType" : "CONNECTOR",
+                "label" : "desc_est_civil",
+                "nativeName" : "desc_est_civil",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "dt_atualz_est_civil",
+                "fieldType" : "CONNECTOR",
+                "label" : "dt_atualz_est_civil",
+                "nativeName" : "dt_atualz_est_civil",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "cpf_conjuge",
+                "fieldType" : "CONNECTOR",
+                "label" : "cpf_conjuge",
+                "nativeName" : "cpf_conjuge",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "nome_conjuge",
+                "fieldType" : "CONNECTOR",
+                "label" : "nome_conjuge",
+                "nativeName" : "nome_conjuge",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "cd_profissao",
+                "fieldType" : "CONNECTOR",
+                "label" : "cd_profissao",
+                "nativeName" : "cd_profissao",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "profissao",
+                "fieldType" : "CONNECTOR",
+                "label" : "profissao",
+                "nativeName" : "profissao",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "dt_atualz_profissao",
+                "fieldType" : "CONNECTOR",
+                "label" : "dt_atualz_profissao",
+                "nativeName" : "dt_atualz_profissao",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "fx_renda",
+                "fieldType" : "CONNECTOR",
+                "label" : "fx_renda",
+                "nativeName" : "fx_renda",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "vl_renda",
+                "fieldType" : "CONNECTOR",
+                "label" : "vl_renda",
+                "nativeName" : "vl_renda",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "cpf_household",
+                "fieldType" : "CONNECTOR",
+                "label" : "cpf_household",
+                "nativeName" : "cpf_household",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "bolsa_familia",
+                "fieldType" : "CONNECTOR",
+                "label" : "bolsa_familia",
+                "nativeName" : "bolsa_familia",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "nis",
+                "fieldType" : "CONNECTOR",
+                "label" : "nis",
+                "nativeName" : "nis",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "tit_eleitor",
+                "fieldType" : "CONNECTOR",
+                "label" : "tit_eleitor",
+                "nativeName" : "tit_eleitor",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "zona",
+                "fieldType" : "CONNECTOR",
+                "label" : "zona",
+                "nativeName" : "zona",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "secao",
+                "fieldType" : "CONNECTOR",
+                "label" : "secao",
+                "nativeName" : "secao",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "email",
+                "fieldType" : "CONNECTOR",
+                "label" : "email",
+                "nativeName" : "email",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "flag_ppe",
+                "fieldType" : "CONNECTOR",
+                "label" : "flag_ppe",
+                "nativeName" : "flag_ppe",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "nome_arq_ingtao",
+                "fieldType" : "CONNECTOR",
+                "label" : "nome_arq_ingtao",
+                "nativeName" : "nome_arq_ingtao",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "dt_ingtao_ptcao",
+                "fieldType" : "CONNECTOR",
+                "label" : "dt_ingtao_ptcao",
+                "nativeName" : "dt_ingtao_ptcao",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_CLIENTE.csv"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2023-10-25T16:34:18.902Z",
+        "name" : "SRC_TELEFONE",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "tp_registro"
+            },
+            "name" : "tp_registro",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "cpf"
+            },
+            "name" : "cpf",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ord_tel"
+            },
+            "name" : "ord_tel",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ddi"
+            },
+            "name" : "ddi",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ddd"
+            },
+            "name" : "ddd",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "tel"
+            },
+            "name" : "tel",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "uso_tel"
+            },
+            "name" : "uso_tel",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "tp_tel"
+            },
+            "name" : "tp_tel",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "dt_atualz_tel"
+            },
+            "name" : "dt_atualz_tel",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "flag_procon"
+            },
+            "name" : "flag_procon",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "nome_arq_ingtao"
+            },
+            "name" : "nome_arq_ingtao",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "dt_ingtao_ptcao"
+            },
+            "name" : "dt_ingtao_ptcao",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ddd_tel"
+            },
+            "name" : "ddd_tel",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@aq8w7IdfRqRbEiOTrVPBMt",
+          "connectionName" : "CN_FLATFILE_MARAUJO",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "BRA_TELEFONE.csv",
+            "label" : "BRA_TELEFONE.csv",
+            "objectName" : "BRA_TELEFONE.csv",
+            "path" : "BRA_TELEFONE.csv",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "tp_registro",
+                "fieldType" : "CONNECTOR",
+                "label" : "tp_registro",
+                "nativeName" : "tp_registro",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_TELEFONE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "cpf",
+                "fieldType" : "CONNECTOR",
+                "label" : "cpf",
+                "nativeName" : "cpf",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_TELEFONE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "ord_tel",
+                "fieldType" : "CONNECTOR",
+                "label" : "ord_tel",
+                "nativeName" : "ord_tel",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_TELEFONE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "ddi",
+                "fieldType" : "CONNECTOR",
+                "label" : "ddi",
+                "nativeName" : "ddi",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_TELEFONE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "ddd",
+                "fieldType" : "CONNECTOR",
+                "label" : "ddd",
+                "nativeName" : "ddd",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_TELEFONE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "tel",
+                "fieldType" : "CONNECTOR",
+                "label" : "tel",
+                "nativeName" : "tel",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_TELEFONE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "uso_tel",
+                "fieldType" : "CONNECTOR",
+                "label" : "uso_tel",
+                "nativeName" : "uso_tel",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_TELEFONE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "tp_tel",
+                "fieldType" : "CONNECTOR",
+                "label" : "tp_tel",
+                "nativeName" : "tp_tel",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_TELEFONE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "dt_atualz_tel",
+                "fieldType" : "CONNECTOR",
+                "label" : "dt_atualz_tel",
+                "nativeName" : "dt_atualz_tel",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_TELEFONE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "flag_procon",
+                "fieldType" : "CONNECTOR",
+                "label" : "flag_procon",
+                "nativeName" : "flag_procon",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_TELEFONE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "nome_arq_ingtao",
+                "fieldType" : "CONNECTOR",
+                "label" : "nome_arq_ingtao",
+                "nativeName" : "nome_arq_ingtao",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_TELEFONE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "dt_ingtao_ptcao",
+                "fieldType" : "CONNECTOR",
+                "label" : "dt_ingtao_ptcao",
+                "nativeName" : "dt_ingtao_ptcao",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_TELEFONE.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "ddd_tel",
+                "fieldType" : "CONNECTOR",
+                "label" : "ddd_tel",
+                "nativeName" : "ddd_tel",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "BRA_TELEFONE.csv"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2023-10-25T16:35:22.013Z",
+        "name" : "SRC_CLIENTE_CPF",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "sorterMode" : "SIMPLE",
+        "sortEntries" : [
+          {
+            "ascending" : "true",
+            "fieldName" : "cpf"
+          }
+        ]
+      },
+      {
+        "createTime" : "2023-10-25T16:35:58.550Z",
+        "name" : "JNR_CLIENTE_TELEFONE",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Cache Directory",
+            "value" : "$PMCacheDir"
+          },
+          {
+            "name" : "Null ordering in master",
+            "value" : "Null is Highest Value"
+          },
+          {
+            "name" : "Null ordering in detail",
+            "value" : "Null is Higest Value"
+          },
+          {
+            "name" : "Joiner Data Cache Size",
+            "value" : "AUTO"
+          },
+          {
+            "name" : "Joiner Index Cache Size",
+            "value" : "AUTO"
+          },
+          {
+            "name" : "Sorted Input",
+            "value" : "false"
+          },
+          {
+            "name" : "Master Sort Order",
+            "value" : "AUTO"
+          },
+          {
+            "name" : "Transformation Scope",
+            "value" : "All Input"
+          },
+          {
+            "name" : "Optional",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "Master",
+            "output" : "false",
+            "conflictResolutions" : [
+              {
+                "precedingGroupName" : "DefaultGroup",
+                "precedingTxName" : "SRC_CLIENTE_CPF",
+                "rule" : {
+                  "bulkRename" : "true",
+                  "include" : "true",
+                  "bulkRenameOption" : {
+                    "literal" : "CLI_",
+                    "suffix" : "false"
+                  }
+                }
+              }
+            ],
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "true",
+            "name" : "Detail",
+            "output" : "false",
+            "conflictResolutions" : [
+              {
+                "precedingGroupName" : "DefaultGroup",
+                "precedingTxName" : "SRC_TELEFONE",
+                "rule" : {
+                  "bulkRename" : "true",
+                  "include" : "true",
+                  "bulkRenameOption" : {
+                    "literal" : "TEL_",
+                    "suffix" : "false"
+                  }
+                }
+              }
+            ],
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "OutputGroup",
+            "output" : "true"
+          }
+        ],
+        "joinType" : "Normal Join",
+        "joinConditions" : [
+          {
+            "leftOperand" : "CLI_cpf",
+            "operator" : "=",
+            "rightOperand" : "TEL_cpf"
+          }
+        ]
+      },
+      {
+        "createTime" : "2023-10-25T17:23:27.645Z",
+        "name" : "FIL_CLIENTE_TELEFONE_PROFISSAO",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "filterConditions" : [
+          {
+            "fieldName" : "CLI_cd_profissao",
+            "filterValue" : "519",
+            "operator" : "="
+          }
+        ]
+      },
+      {
+        "createTime" : "2023-10-25T17:36:14.186Z",
+        "name" : "AGG_CLIENTE_TELEFONE_CONTAGEM",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "false"
+              },
+              {
+                "bulkRename" : "false",
+                "include" : "true",
+                "names" : [
+                  {
+                    "inputName" : "CLI_cpf"
+                  },
+                  {
+                    "inputName" : "TEL_cpf"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "fields" : [
+          {
+            "name" : "Qtde_contatosTelefone",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 10,
+            "scale" : 0,
+            "expFieldType" : "OUTPUT",
+            "expression" : "count(TEL_CPF)"
+          }
+        ],
+        "groupByFieldsList" : {
+          "fields" : [
+            {
+              "fieldName" : "CLI_cpf"
+            }
+          ]
+        }
+      },
+      {
+        "createTime" : "2023-10-25T17:36:27.869Z",
+        "name" : "TGT_ClientesTelefone",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "sessionProperties" : [
+          {
+            "name" : "Append if Exists",
+            "value" : "NO"
+          },
+          {
+            "name" : "Create Target Directory",
+            "value" : "NO"
+          },
+          {
+            "name" : "Header Options",
+            "value" : "Output Field Names"
+          },
+          {
+            "name" : "Output Type",
+            "value" : "File"
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@aq8w7IdfRqRbEiOTrVPBMt",
+          "connectionName" : "CN_FLATFILE_MARAUJO",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "out_Bra_ClienteTelefone.csv",
+            "label" : "out_Bra_ClienteTelefone.csv",
+            "path" : "out_Bra_ClienteTelefone.csv",
+            "retainMetadata" : "false",
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ";",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "none"
+            }
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2023-10-25T17:39:50.843Z",
+        "name" : "TGT_ClientesTelefone_AGG",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          },
+          {
+            "name" : "Thousand Separator",
+            "value" : "None"
+          },
+          {
+            "name" : "Decimal Separator",
+            "value" : "."
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "sessionProperties" : [
+          {
+            "name" : "Append if Exists",
+            "value" : "NO"
+          },
+          {
+            "name" : "Create Target Directory",
+            "value" : "NO"
+          },
+          {
+            "name" : "Header Options",
+            "value" : "Output Field Names"
+          },
+          {
+            "name" : "Output Type",
+            "value" : "File"
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@aq8w7IdfRqRbEiOTrVPBMt",
+          "connectionName" : "CN_FLATFILE_MARAUJO",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "bra_ClientesTelefones_AGG.csv",
+            "label" : "bra_ClientesTelefones_AGG.csv",
+            "path" : "bra_ClientesTelefones_AGG.csv",
+            "retainMetadata" : "false",
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ";",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2024-01-08T12:40:26.856Z",
+        "name" : "RS_Validação_CPF",
+        "advancedProperties" : [
+          {
+            "name" : "version",
+            "value" : "R37"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "Input group:",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "MappletOutputTx_Output",
+            "output" : "true"
+          }
+        ],
+        "documentId" : "@0N5iLpK9SG5jBucOobe2Mv",
+        "ruleId" : "@0N5iLpK9SG5jBucOobe2Mv",
+        "inputGroups" : [
+          {
+            "name" : "Input group:",
+            "fieldMappingMode" : "MANUAL",
+            "fieldMapping" : {
+              "fields" : [
+                {
+                  "name" : "cpf",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "CPF"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "inputFields" : {
+          "fieldList" : [
+            {
+              "name" : "CPF",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 50,
+              "scale" : 0
+            }
+          ]
+        },
+        "outputFields" : {
+          "fieldList" : [
+            {
+              "name" : "Ruleset_Valida_CPF",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 100,
+              "scale" : 0
+            },
+            {
+              "name" : "Somente_Numeros",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 100,
+              "scale" : 0
+            },
+            {
+              "name" : "Sem_Repeticao",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 100,
+              "scale" : 0
+            },
+            {
+              "name" : "String_Menor_6",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 100,
+              "scale" : 0
+            },
+            {
+              "name" : "Valida_Digito_CPF",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 100,
+              "scale" : 0
+            },
+            {
+              "name" : "Somente_11_Zeros",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 100,
+              "scale" : 0
+            }
+          ]
+        }
+      },
+      {
+        "createTime" : "2024-01-08T12:41:45.589Z",
+        "name" : "FIL_CPF_VALIDOS",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "false"
+              },
+              {
+                "bulkRename" : "true",
+                "include" : "true",
+                "bulkRenameOption" : {
+                  "literal" : "CLI_",
+                  "suffix" : "false"
+                }
+              }
+            ]
+          }
+        ],
+        "filterConditions" : [
+          {
+            "fieldName" : "CLI_Ruleset_Valida_CPF",
+            "filterValue" : "VALID",
+            "operator" : "="
+          }
+        ]
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-10-02 14:40:04 BRT"
+}
